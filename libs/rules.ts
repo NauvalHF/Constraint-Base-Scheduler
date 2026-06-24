@@ -1,4 +1,4 @@
-import type { DependencyRef, Rule } from "@/types/types";
+import type { DependencyRef, Rule } from "@/libs/types";
 
 /** Every day has a capacity, so this rule always applies. */
 export const capacityRule: Rule = {

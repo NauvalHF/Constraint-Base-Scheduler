@@ -7,7 +7,7 @@ import type {
   EngineState,
   ScheduleResult,
   UnscheduledActivity,
-} from "@/types/types";
+} from "@/libs/types";
 import { defaultRules } from "./rules";
 
 export function checkPlacement(

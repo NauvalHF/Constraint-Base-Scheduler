@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ScheduleDay, Assignment } from "@/types/types";
+import { ScheduleDay, Assignment } from "@/libs/types";
 
 interface ScheduleTableProps {
   userDays: ScheduleDay[];

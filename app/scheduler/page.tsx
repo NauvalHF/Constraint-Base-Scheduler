@@ -6,8 +6,8 @@ import {
   ScheduleDay,
   Assignment,
   UnscheduledActivity,
-} from "../../types/types";
-import { distributeActivities } from "@/libs/scheduler/schedularEngine";
+} from "../../libs/types";
+import { distributeActivities } from "@/libs/schedularEngine";
 import SchedulerSidebar from "@/components/SchedureSidebar";
 import HorizontalCalendar from "@/components/ScheduleTable";
 import { exportDynamicEngineToExcel } from "@/utils/excelExport";
@@ -47,9 +47,7 @@ export default function SchedulerPage() {
     });
   };
 
-  const [activities, setActivities] = useState<Activity[]>([]); 
-
- 
+  const [activities, setActivities] = useState<Activity[]>([]);
 
   const [scheduleResult, setScheduleResult] = useState<{
     assignments: Assignment[];
@@ -58,8 +56,8 @@ export default function SchedulerPage() {
 
   const handleGenerate = () => {
     const output = distributeActivities(activities, userDays);
-    console.log(activities)
-    console.log(scheduleResult.assignments)
+    console.log(activities);
+    console.log(scheduleResult.assignments);
     setScheduleResult(output);
     setIsSidebarOpen(false);
   };
@@ -95,7 +93,6 @@ export default function SchedulerPage() {
 
       {/* 3. MAIN WORKSPACE APP PANEL */}
       <main className="flex-1 flex flex-col h-full overflow-hidden">
-        
         <header className="h-14 border-b border-gray-200 bg-white flex items-center justify-between px-4 lg:px-8 shrink-0">
           <div className="flex flex-1 items-center gap-3">
             {/* Mobile Responsive Menu Control Button */}

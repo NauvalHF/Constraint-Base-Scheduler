@@ -1,5 +1,5 @@
 import * as XLSX from "xlsx";
-import { Assignment, ScheduleDay } from "@/types/types";
+import { Assignment, ScheduleDay } from "@/libs/types";
 
 interface NewScheduleResult {
   assignments: Assignment[];

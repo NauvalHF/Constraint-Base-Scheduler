@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Activity, ScheduleDay } from "@/types/types";
+import { Activity, ScheduleDay } from "@/libs/types";
 
 type ActiveTab = "craft" | "dayConfig" | "payload";
 type RuleType = "none" | "gapDays" | "preferredDay" | "exclusiveFixedDate";
