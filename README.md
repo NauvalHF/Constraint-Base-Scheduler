@@ -1,6 +1,6 @@
 # Constraint Scheduler
 
-> **Live site → [your-url-here.com](https://your-url-here.com)**
+> **Live site → [constraint-base-scheduler.vercel.app](https://constraint-base-scheduler.vercel.app/)**
 
 A constraint-based scheduling engine with a visual workspace. Set the rules once — availability, dependencies, gap requirements — and let the engine find a plan that actually fits.
 
